@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "e1d644dc-1890-4002-a3cf-ec629ec848ab",
+		"name": "prueba_201901_p1_0318199700125_postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/api/empresas/nuevo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "_id",
+							"value": "'1'",
+							"type": "text"
+						},
+						{
+							"key": "empresa",
+							"value": "'NetGo'",
+							"type": "text"
+						},
+						{
+							"key": "url",
+							"value": "'http://youtube.com/ntGo.mp4",
+							"type": "text"
+						},
+						{
+							"key": "nombre",
+							"value": "'Publicidad general.'",
+							"type": "text"
+						},
+						{
+							"key": "year",
+							"value": "2016",
+							"type": "text"
+						},
+						{
+							"key": "rating",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "fechaIng",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/empresas/nuevo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"empresas",
+						"nuevo"
+					]
+				},
+				"description": "Insertando en Empresas"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/empresas/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/empresas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"empresas",
+						""
+					]
+				},
+				"description": "Obteniendo los datos del archivo."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/empresas/actualizar/2cb768a4-f372-411c-abd2-3b2d61ecc882",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "_id",
+							"value": "7",
+							"type": "text"
+						},
+						{
+							"key": "empresa",
+							"value": "UNICAH",
+							"type": "text"
+						},
+						{
+							"key": "url",
+							"value": "http://youtube.com/video.mp4",
+							"type": "text"
+						},
+						{
+							"key": "nombre",
+							"value": "Holaaaa",
+							"type": "text"
+						},
+						{
+							"key": "year",
+							"value": "2005",
+							"type": "text"
+						},
+						{
+							"key": "rating",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "fechaIng",
+							"value": "10/12/2019",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/empresas/actualizar/40aa13e4-9f89-4775-a3d9-3988ed4867b9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"empresas",
+						"actualizar",
+						"40aa13e4-9f89-4775-a3d9-3988ed4867b9"
+					]
+				},
+				"description": "Actualizando registro y comprobando que el id y la fecha se mantengan íntegros."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/empresas/eliminar/2cb768a4-f372-411c-abd2-3b2d61ecc882",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/empresas/eliminar/40aa13e4-9f89-4775-a3d9-3988ed4867b9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"empresas",
+						"eliminar",
+						"40aa13e4-9f89-4775-a3d9-3988ed4867b9"
+					]
+				},
+				"description": "Eliminando un registro."
+			},
+			"response": []
+		}
+	]
+}
